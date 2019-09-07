@@ -1,0 +1,79 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+.navbar{
+  background-color:inherit;
+  height:60px;
+  overflow-y:visible;
+}
+.nav-link{
+  font-size:20px;
+  font-weight:bold;
+}
+.navbar-collapse{
+  background-color:inherit;
+  margin-left:125px;
+  z-index:999999;
+}
+.active>a{
+  color:red;
+}
+.curlingLogo{
+  position:absolute;
+  z-index:2000;
+}
+main{
+  background-color:inherit;
+  padding-bottom:18em;
+}
+span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: black;
+  border-color: black;
+}
+.card{
+  height:415px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-img-top{
+  height:150px;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom:0;
+  margin-top:25px;
+  background-color: #f5f5f5;
+}
+
+.parallax { 
+  /* The image used */
+  background-image: url("https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/1410751_668908976473784_1038807770_o.jpg?_nc_cat=110&_nc_oc=AQkc0NGbubTHH5EoEtdsd9mWadwdbIQCPZ0nSddmISAlYFKMDtf5l5zF1MNNnlNbzcY&_nc_ht=scontent-dfw5-1.xx&oh=8662fba29d033937022beb2a94bfaa9a&oe=5DC57566");
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.backImg{
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+.backImg>img{
+  opacity: 0.5;
+}
+}
