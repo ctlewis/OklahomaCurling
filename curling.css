@@ -25,26 +25,25 @@ html {
 }
 main{
   background-color:inherit;
-  padding-bottom:18em;
+  padding-bottom:23em;
 }
 span.navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   color: black;
   border-color: black;
 }
-.card{
+.card-415{
   height:415px;
   margin-left: auto;
   margin-right: auto;
 }
-.card-img-top{
+.card-img-150{
   height:150px;
 }
 .footer {
   position: absolute;
   width: 100%;
   bottom:0;
-  margin-top:25px;
   background-color: #f5f5f5;
 }
 
@@ -66,11 +65,13 @@ span.navbar-toggler-icon {
   .parallax {
     background-attachment: scroll;
   }
+  .home-header {
+    font-size: 40px;
+  }
 }
 
 
 .home-header {
-
   padding-bottom: 10px;
   border-bottom: 4px solid;
 }

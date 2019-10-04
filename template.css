@@ -23,7 +23,10 @@ html {
 }
 main{
   background-color:inherit;
-  padding-bottom:21em;
+  padding-bottom:23em;
+}
+.border-2 {
+  border-width:2px !important;
 }
 .align-center{
   display: flex;
