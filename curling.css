@@ -52,6 +52,7 @@ span.navbar-toggler-icon {
   background-image: url("./resources/images/CurlingBackground.jpg");
   /* Full height */
   height: 100%; 
+  position: relative;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -60,17 +61,19 @@ span.navbar-toggler-icon {
   background-size: cover;
 }
 
+.parallax-overlay {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-color: #000000;
+  opacity: .3;
+   }
+
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
   .home-header {
     font-size: 40px;
   }
-}
-
-
-.home-header {
-  padding-bottom: 10px;
-  border-bottom: 4px solid;
 }
 
 .btn-card{
