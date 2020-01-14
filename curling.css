@@ -80,3 +80,15 @@ span.navbar-toggler-icon {
   position:absolute;
   bottom:1em;
 }
+
+.table tbody > tr.bg-gold {
+  background-color: #FEE101 !important;
+}
+
+.table tbody > tr.bg-silver {
+  background-color: #A7A7AD !important;
+}
+
+.table tbody > tr.bg-bronze {
+  background-color: #A77044 !important;
+}

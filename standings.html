@@ -73,47 +73,34 @@
 
     <!-- Main Content -->
     <main role="main">
-
-        <div class="container-fluid py-5">
-            <div class="row">
-
-                <div class="col my-auto pb-3">
-                    <div class="h1 text-uppercase text-center font-weight-bold">
-                        Learn to Curl
+            <div class="container-fluid py-5 text-center">
+                    <div class="col h1 pb-5">
+                            <Strong>
+                                Winter 2020 Competitive Standings
+                            </Strong>
+                        </div>
+                    <div class="col h2">
+                        <Strong>
+                            4:00 PM Draw
+                        </Strong>
                     </div>
-                    <div class="h4">
-                        If you are interested in curling and want to see what it's all about, our Learn to Curl events
-                        are perfect for you!
+                    <div class="col">
+                        <div class="row py-3 table-responsive mx-0" id="draw1">
+                            <!--Table gets injected here by JavaScript-->
+                        </div>
                     </div>
-                    <table class="table pb-auto">
-                        <tbody>
-                          <tr>
-                            <th scope="row">When</th>
-                            <td>See our Facebook page for dates</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Cost</th>
-                            <td>$25/person</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Time</th>
-                            <td>2 Hours</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Where</th>
-                            <td>Artic Edge Ice Arena</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <div class="h4">
-                            Our Learn to Curl (LTC) classes are a 2 hour class where we teach you the basics of curling (delivery, sweeping, scoring) and then play 2-3 full ends so you can see how it feels to play a full game. We have all the equipment required to participate. We ask that you dress warmish in layers and wear rubber soled tennis shoes. Our minimum age to participate is 15 years old and we require a parent or legal guardian be present to fill out the youth waiver and stay during the entire LTC for all minors.
-                      </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="./resources/images/teaching.jpg" class="img-fluid rounded">
-                </div>
+
+                    <div class="col h2">
+                            <Strong>
+                                6:15 PM Draw
+                            </Strong>
+                        </div>
+                        <div class="col">
+                            <div class="row py-3 table-responsive mx-0" id="draw2">
+                                <!--Table gets injected here by JavaScript-->
+                            </div>
+                        </div>
             </div>
-        </div>
 
     </main>
 
@@ -174,5 +161,61 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+<script>
+    function arrayToTable(tableData) {
+        var table = $('<table class="table table-striped text-center"></table>');
+        $(tableData).each(function (i, rowData) {
+            //If this is the first row, treat it as a header
+            if(i===0){
+                var row = $('<thead class="thead-dark"><tr></tr></thead>');
+                $(rowData).each(function (j, cellData) {
+                    row.append($('<th scope="col">'+cellData+'</th>'));
+                });}
+            else{
+                var row = $('<tr></tr>');
+                var color;
+                switch(i){
+                  case 1:
+                    color = 'bg-gold';
+                    break;
+                  case 2:
+                    color = 'bg-silver';
+                    break;
+                  case 3:
+                    color = 'bg-bronze';
+                    break;
+                }
+                
+                var row = $('<tr class=' + color + '></tr>');
+                $(rowData).each(function (j, cellData) {
+                    if(j===0){row.append($('<th scope="row">'+cellData+'</th>'));}
+                    else{row.append($('<td>'+cellData+'</td>'));}
+                });}
+            
+            table.append(row);
+        });
+        return table;
+    }
+
+    $.ajax({
+        type:"GET",
+        url: "http://www.okcurling.com/resources/standings1.csv",
+        dataType: "text",
+        success: function (data) {
+            $('#draw1').append(arrayToTable(Papa.parse(data).data));
+        }
+    });
+    $.ajax({
+        type:"GET",
+        url: "http://www.okcurling.com/resources/standings2.csv",
+        dataType: "text",
+        success: function (data) {
+            $('#draw2').append(arrayToTable(Papa.parse(data).data));
+        }
+    });
+</script>
 
 </html>
