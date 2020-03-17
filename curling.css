@@ -21,7 +21,7 @@ html {
 }
 .curlingLogo{
   position:absolute;
-  z-index:2000;
+  z-index:1030;
 }
 main{
   background-color:inherit;

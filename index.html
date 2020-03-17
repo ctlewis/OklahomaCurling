@@ -5,6 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -17,6 +18,35 @@
 </head>
 
 <body>
+  <!-- Modal (When Needed) -->
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">2020 Spring League Cancelled</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>We have been made aware of the indefinite closure of our host arena. 
+            This, and with the social awareness of the current health crisis, has caused us as a board and curling club to make the decision to cancel the spring
+             league session. We apologize for any inconvenience this may cause, but personal health and well being is at the forefront of this decision. 
+             Please stay tuned in to our web site and Facebook page as we hope to be able to hold our Annual General Meeting and the 10th Anniversary of the 
+             club later this summer. We sincerely hope that you and yours stay safe during this time and we can have a full return to league play this fall.
+            <br><br>
+             Respectfully,
+             The Oklahoma Curling Club Board of Directors</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Modal-->
+
+
   <a class="curlingLogo pl-1 pt-1" href="http://www.okcurling.com/">
     <img src="./resources/images/OKCC_LogoV3_0916.png">
   </a>
@@ -71,8 +101,13 @@
     </a>
   </div>
 
+  
+
+  
+
   <!-- Main Content -->
   <main role="main">
+    
 
     <!-- Content Cards -->
     <div class="album parallax">
@@ -230,5 +265,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+  <script type="text/javascript">
+    console.log("test");
+    $('.modal').modal('show');
+  </script>
 
 </html>
