@@ -1,207 +1,64 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head><div id="header-placeholder"></div></head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- RENAME THE LINKED CSS FILE IF COPYING THIS-->
-    <link href="curling.css" rel="stylesheet">
-
-    <title>Oklahoma Curling Club</title>
-</head>
-
-<body>
-    <a class="curlingLogo pl-1 pt-1" href="http://www.okcurling.com/">
-        <img src="./resources/images/OKCC_LogoV3_0916.png">
-    </a>
-    <!-- Navbar Start -->
-    <nav class="navbar sticky-top navbar-expand-lg bg-light text-uppercase" data-toggle="collapse">
-        <!--This navbar-brand is needed to trick the collapse menu to move to the right -->
-        <a class="navbar-brand" href="http://www.okcurling.com/"></a>
-        <!-- Bootstrap CSS -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item btn">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item btn">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item btn">
-                    <a class="nav-link" href="learn.html">Learn</a>
-                </li>
-                <li class="nav-item btn dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        League Play
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="schedule.html">Schedule</a>
-                        <a class="dropdown-item" href="standings.html">Standings</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Social Media Start -->
-    <div id="social" align="right">
-        <a href="http://www.facebook.com/okcurling" class="sociallink">
-          <img src="./resources/images/facebookIcon.png" alt="Facebook f logo">
-        </a>
-        <a href="http://www.twitter.com/okcurling" class="sociallink">
-          <img src="./resources/images/twitterIcon.png" alt="Twitter logo">
-        </a>
-        <a href="http://www.instagram.com/okcurling" class="sociallink">
-          <img src="./resources/images/instagramIcon.png" alt="Instagram icon">
-        </a>
-        <a href="http://www.youtube.com/okcurling" class="sociallink">
-          <img src="./resources/images/youtubeIcon.png" alt="YouTube icon">
-        </a>
-      </div>
+  <body>
+    <div id="nav-placeholder"></div>
 
     <!-- Main Content -->
     <main role="main">
-            <div class="container-fluid py-5 text-center">
-                    <div class="col h1 pb-5">
-                            <Strong>
-                                Winter 2020 Competitive Schedule
-                            </Strong>
-                        </div>
-                    <div class="col h2">
-                        <Strong>
-                            4:00 PM Draw
-                        </Strong>
-                    </div>
-                    <div class="col">
-                        <div class="row py-3 table-responsive mx-0" id="draw1">
-                            <!--Table gets injected here by JavaScript-->
-                        </div>
-                    </div>
+      <div class="container-fluid py-5 text-center">
+              <div class="col h1 pb-5">
+                      <Strong>
+                          Winter 2020 Competitive Schedule
+                      </Strong>
+                  </div>
+              <div class="col h2">
+                  <Strong>
+                      4:00 PM Draw
+                  </Strong>
+              </div>
+              <div class="col">
+                  <div class="row py-3 table-responsive mx-0" id="draw1">
+                      <!--Table gets injected here by JavaScript-->
+                  </div>
+              </div>
 
-                    <div class="col h2">
-                            <Strong>
-                                6:15 PM Draw
-                            </Strong>
-                        </div>
-                        <div class="col">
-                            <div class="row py-3 table-responsive mx-0" id="draw2">
-                                <!--Table gets injected here by JavaScript-->
-                            </div>
-                        </div>
-            </div>
+              <div class="col h2">
+                      <Strong>
+                          6:15 PM Draw
+                      </Strong>
+                  </div>
+                  <div class="col">
+                      <div class="row py-3 table-responsive mx-0" id="draw2">
+                          <!--Table gets injected here by JavaScript-->
+                      </div>
+                  </div>
+      </div>
 
-    </main>
+</main>
 
     <!-- Footer -->
-    <footer class="footer bg-light pt-2 font-smallpt-4">
-        <!-- Footer Text -->
-        <div class="container-fluid text-center text-md-left">
-            <!-- Grid row -->
-            <div class="row px-5">
-                <!-- Grid column -->
-                <div class="col-md-5">
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold text-center">Oklahoma Curling</h5>
-                    <p>The Oklahoma Curling Club is a 501(c)(3) non-profit corporation dedicated to promoting the
-                        Olympic sport of curling in the state of Oklahoma.</p>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2"></div>
-                <!-- Grid column -->
-                <div class="col-md-5">
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold text-center">Email List</h5>
-                    <p>Sign up to get all the latest news about Learn to Curl events, league play, and other fun events.
-                    </p>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="e-mail" aria-label="e-mail"
-                            aria-describedby="button-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-        </div>
-        <!-- Footer Text -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center">© 2019 Copyright:
-            <a href="okcurling@gmail.com">Oklahoma Curling Club</a>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
+  <footer>
+    <div id="footer-placeholder"></div>
+  </footer>
+  </body>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
-<script>
-    function arrayToTable(tableData) {
-        var table = $('<table class="table table-striped text-center"></table>');
-        $(tableData).each(function (i, rowData) {
-            //If this is the first row, treat it as a header
-            if(i===0){
-                var row = $('<thead class="thead-dark"><tr></tr></thead>');
-                $(rowData).each(function (j, cellData) {
-                    row.append($('<th scope="col">'+cellData+'</th>'));
-                });}
-            else{
-                var row = $('<tr></tr>');
-                $(rowData).each(function (j, cellData) {
-                    if(j===0){row.append($('<th scope="row">'+cellData+'</th>'));}
-                    else{row.append($('<td>'+cellData+'</td>'));}
-                });}
-            
-            table.append(row);
-        });
-        return table;
-    }
+    <!-- Load Page Templates -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/Templates/templateJS.js"></script>
 
-    $.ajax({
-        type:"GET",
-        url: "http://www.okcurling.com/resources/schedule1.csv",
-        dataType: "text",
-        success: function (data) {
-            $('#draw1').append(arrayToTable(Papa.parse(data).data));
-        }
-    });
-    $.ajax({
-        type:"GET",
-        url: "http://www.okcurling.com/resources/schedule2.csv",
-        dataType: "text",
-        success: function (data) {
-            $('#draw2').append(arrayToTable(Papa.parse(data).data));
-        }
-    });
-</script>
-
+    <!-- Populate Schedule Tables -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+    <script src="schedule.js"></script>
 </html>
+
